@@ -9,28 +9,30 @@
   </head>
   <body>
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg bg-dark p-2">
+    <nav class="navbar navbar-expand-lg bg-dark p-2 border-bottom border-body mb-4" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">LOGO</a>
-        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">
+          <img width="50px" src="./img/duck.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">Catalogo libri</a>
+              <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white-50" href="#">anagrafica utenti</a>
+              <a class="nav-link" href="#">anagrafica utenti</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white-50" href="#">storico grafici</a>
+              <a class="nav-link" href="#">storico grafici</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white-50" href="#">storico prestiti</a>
+              <a class="nav-link" href="#">storico prestiti</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white-50" href="#">help</a>
+              <a class="nav-link" href="#">help</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -40,6 +42,255 @@
         </div>
       </div>
     </nav>
-
+    <div class="container">
+      <div class="row">
+        <div class="row justify-content-between col-lg-9">
+          <h2 class="col-6">Catalogo Libri</h2>
+          <div class="col-6 d-flex justify-content-end">
+            <button type="button" class="btn btn-primary">Aggiungi libro</button>
+          </div>
+          <table class="table col-12 table-striped mt-4">
+            <thead>
+              <tr class="align-middle">
+                <th scope="col">Titolo</th>
+                <th scope="col">Data prestito</th>
+                <th scope="col">Stato</th>
+                <th scope="col" class="text-center">Azioni</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="align-middle">
+                <td>I pilastri della terra</td>
+                <td>-</td>
+                <td>
+                  <button type="button" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button>
+                </td>
+                <td class="d-flex justify-content-center gap-1">
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td>I pilastri della terra</td>
+                <td>-</td>
+                <td>
+                  <button type="button" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button>
+                </td>
+                <td class="d-flex justify-content-center gap-1">
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td>I pilastri della terra</td>
+                <td>-</td>
+                <td>
+                  <button type="button" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button>
+                </td>
+                <td class="d-flex justify-content-center gap-1">
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td>I pilastri della terra</td>
+                <td>-</td>
+                <td>
+                  <button type="button" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button>
+                </td>
+                <td class="d-flex justify-content-center gap-1">
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td>I pilastri della terra</td>
+                <td>-</td>
+                <td>
+                  <button type="button" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button>
+                </td>
+                <td class="d-flex justify-content-center gap-1">
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td>I pilastri della terra</td>
+                <td>-</td>
+                <td>
+                  <button type="button" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button>
+                </td>
+                <td class="d-flex justify-content-center gap-1">
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td>I pilastri della terra</td>
+                <td>-</td>
+                <td>
+                  <button type="button" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button>
+                </td>
+                <td class="d-flex justify-content-center gap-1">
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td>I pilastri della terra</td>
+                <td>-</td>
+                <td>
+                  <button type="button" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button>
+                </td>
+                <td class="d-flex justify-content-center gap-1">
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td>I pilastri della terra</td>
+                <td>-</td>
+                <td>
+                  <button type="button" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button>
+                </td>
+                <td class="d-flex justify-content-center gap-1">
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td>I pilastri della terra</td>
+                <td>-</td>
+                <td>
+                  <button type="button" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button>
+                </td>
+                <td class="d-flex justify-content-center gap-1">
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td>I pilastri della terra</td>
+                <td>-</td>
+                <td>
+                  <button type="button" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button>
+                </td>
+                <td class="d-flex justify-content-center gap-1">
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td>I pilastri della terra</td>
+                <td>-</td>
+                <td>
+                  <button type="button" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button>
+                </td>
+                <td class="d-flex justify-content-center gap-1">
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
